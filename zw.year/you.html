@@ -19,7 +19,7 @@
             margin: auto;
             font-size: 20px;
             font-weight: 500;
-            color: red;
+            color: white;
         }
         
         p {
@@ -30,13 +30,18 @@
         .block {
             display: inline-block;
         }
-        
-        img {
+        /* img {
             width: 80%;
         }
         
         .box2 {
+            width: 80%;
             margin: auto;
+            display: none;
+        } */
+        
+        body {
+            background-image: url(https://img0.baidu.com/it/u=2704552892,2625096367&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500);
         }
     </style>
 
@@ -47,7 +52,10 @@
     <div class="box
    
     "></div>
-    <div class="box2"></div>
+    <div class="box2">
+
+        <img src="https://img0.baidu.com/it/u=2704552892,2625096367&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="">
+    </div>
 
 
 
@@ -142,9 +150,9 @@
 
                 if (y >= arr.length) {
                     clearInterval(time);
-                    var img = document.createElement('img');
-                    img.src = 'https://img0.baidu.com/it/u=2704552892,2625096367&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500'
-                    box2.appendChild(img);
+                    // var img = document.createElement('img');
+                    // img.src = ''
+                    // box2.appendChild(img);
                 }
             }, 200);
         }
