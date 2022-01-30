@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            padding-top: 100px;
+            width: 1000px;
+            margin: auto;
+        }
+        
+        p {
+            display: inline-block;
+            display: none;
+        }
+        
+        .block {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box
+   
+    "></div>
+
+
+
+
+
+
+    <script>
+        let str = `说 不 出 来 为 什 么 爱 你 ， 但 我 知 道 ， 你 就 是 我 不 爱 别 人 的 理 由 。 “ 月 亮 很 亮 ， 亮 也 没 用 ， 没 用 也 亮 。 我 喜 欢 你 ， 喜 欢 也 没 用 ， 没 用 也 喜 欢 。 ” 遇 到
+ 
+ 
+
+ 可 爱 的 你 ， 生 活 一 下 子 不 艰 难 了 ， 街 道 也 好    晚 风 也 罢 都 很 甜 ！ 
+ 
+ 你 是 往 日 的 情 书 ， 是 日 落 的 余 情 未 了 ， 是 路 人 脚 下 不 停 生 长 的 风 ， 也 是 我 喜 欢 的 人 ， 爱 的 人 ！   
+ 
+ 歌 很 好 听 风 很 舒 服 星 星 也 美 但 更 多 的 开 心 是 来 自 你 手 心 的 温 度 想 牵 着 你 的 手 永 远 不 放 开 ！ 
+ 
+ 我 想 牵 着 你 的 手 ， 走 过 这 座 桥 ， 桥 上 是 绿 叶 红 花 ， 桥 下 是 流 水 人 家 ， 桥 的 那 头 是 青 丝 ， 桥 的 这 头 是 白 发 。 
+ 
+ 我 想 你 知 道 的 ， 陪 你 一 起 慢 慢 变 老 是 我 梦 寐 以 求 的 心 愿 ！ 余 生 请 多 指 教 ！ 不 知 道 为 什 么 ， 看 见 你 ， 总 有 一 种 让 我 拥 抱 你 的 幻 想 。 
+ 
+ 可 能 是 我 太 喜 欢 你 了 吧 ， 不 知 不 觉 就 想 要 吻 你 ， 想 品 尝 你 那 像 樱 桃 一 样 红 润 的 嘴 巴 ！ 弱 水 三 千 只 取 一 瓢 饮   ， 人 潮 拥 挤 我 只 想 要 你 
+
+ 你 知 道 嘛 ！ 我 对 你 的 喜 欢 ， 就 像 是 揣 在 兜 里 的 一 块 糖 ， 明 明 想 和 别 人 显 摆 ， 却 又 怕 被 别 人 抢 。 这 里 荒 芜 寸 草 不 生 ， 后 来 你 来 这 儿 走 了 一 遭 ， 奇 迹 般 万 物 生 长   这 里 ， 是 我 的 心  
+
+
+ 因 为 你 ， 我 想 要 变 成 一 个 更 好 的 人 ， 因 此 发 奋 ， 只 是 想 证 明 我 足 以 与 你 相 配 。 我 怕 爱 你 太 明 显 ， 却 又 怕 你 看 不 见 。 . 喜 欢 你 不 是 情 话 ， 而 是 我 的 心 里 话 。 数 学 里 有 个 温 柔 霸 道 的 词 : 有 且 仅 有 
+
+
+ 喜 欢 你 是 什 么 感 觉 呢 ， 有 时 候 吃 醋 委 屈 得 想 要 哭 鼻 子 ， 有 时 候 又 因 为 你 ， 开 心 的 飞 起 来 ， 喜 欢 你 ， 也 太 难 了 吧 ！ 所 以 ， 你 能 也 喜 欢 我 一 下 好 嘛 ？ 我 会 很 乖 的 ！ 
+
+
+ 梁 思 成 问 林 徽 因 ： 有 一 句 话 ， 我 只 问 一 次 ， 为 什 么 是 我 ！ 
+
+
+ 林 徽 因 答 ： 答 案 很  长 我 得 用 一 生 来 回 答 ！ 
+
+
+ 你 准 备 好 听 了 吗 ？ `;
+
+        var arr2 = ['animate__backInDown', 'animate__backInLeft', 'animate__backInRight', 'animate__backInUp', 'animate__fadeInTopLeft', 'animate__fadeInTopLeft', 'animate__fadeInBottomLeft', 'animate__fadeInBottomRight', 'animate__flipInX', 'animate__flipInY', 'animate__lightSpeedInRight', 'animate__lightSpeedInLeft', 'animate__lightSpeedOutRight', 'animate__lightSpeedOutLeft']
+
+        var arr = str.split(' ');
+        var box = document.querySelector('.box');
+
+        console.log(arr);
+        var x = 0;
+        window.onload = function() {
+
+            for (let i = 0; i < arr.length; i++) {
+
+                x += 200;
+
+                var p = document.createElement('p');
+                //     var p2 = document.querySelectorAll('p');
+
+                p.innerText = arr[i];
+                box.appendChild(p);
+                var num = Math.floor(Math.random() * arr2.length + 1);
+                // console.log(num);
+
+                p.classList.add(arr2[num]);
+
+                p.classList.add('animate__bounceIn');
+                // p.classList.add('animate__repeat-1');
+                p.classList.add('animate__faster');
+                p.style.animationDelay = x + 'ms';
+                p.style.animationDuration = '200ms'
+                    // p.classList.add('block')
+
+                // console.log(p2);
+
+            }
+            // var y = 0;
+
+            // var time = setInterval(() => {
+            //     var p2 = document.querySelectorAll('p');
+            //     p2[y].style.display = 'inline-block';
+
+            //     y += 1;
+
+
+            // }, 600);
+            // if (y >= arr.length) {
+            //     clearInterval(time)
+
+            // }
+
+            var p2 = document.querySelectorAll('p');
+            console.log(p2);
+            console.log(p2[1]);
+            p2.forEach(ele => {
+                console.log(ele);
+
+                var num = Math.floor(Math.random() * arr2.length + 1);
+                // console.log(num);
+
+                ele.classList.add(arr2[num]);
+                ele.style.display = 'inline-block'
+
+            });
+
+
+        }
+    </script>
+</body>
+
+</html>
