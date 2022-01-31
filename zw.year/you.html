@@ -43,6 +43,7 @@
         body {
             background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg14.360buyimg.com%2Fn0%2Fjfs%2Ft1%2F77740%2F16%2F15377%2F513531%2F5dca7d83E2b00d3e2%2F460db8d1384b5772.jpg&refer=http%3A%2F%2Fimg14.360buyimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646135915&t=066e6c218c43f81ae1720dd0e4266fac);
             /* background-repeat: repeat-y; */
+            background-size: 210px;
         }
     </style>
 
@@ -157,6 +158,10 @@
                 }
             }, 200);
         }
+        document.body.style.backgroundSize = window.innerWidth / 2 + 'px';
+
+
+        // console.log(window.innerWidth);
     </script>
 </body>
 
